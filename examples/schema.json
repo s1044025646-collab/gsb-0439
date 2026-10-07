@@ -1,0 +1,6 @@
+{
+  "tables": {
+    "products": ["id", "price"],
+    "orders": ["product_id", "qty", "status"]
+  }
+}
