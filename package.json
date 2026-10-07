@@ -1,0 +1,22 @@
+{
+  "name": "sql-lineage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "离线 SQL 字段值来源（血缘）与别名来源解析后端",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/analyzer.test.js dist/test/api.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/cli.js demo"
+  },
+  "dependencies": {
+    "node-sql-parser": "^5.3.13"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
+
